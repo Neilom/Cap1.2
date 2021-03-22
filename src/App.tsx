@@ -9,13 +9,11 @@ import { Content } from './components/Content';
 import { Header } from './components/Header';
  
 export function App() {
-  const {selectedGenre} = useGenre()
-
   return (
     <GenereProvider> 
       <div style={{ display: 'flex', flexDirection: 'row' }}>
         <SideBar /> 
-        
+
           <div className="container">
             <Header />
             <Content />
